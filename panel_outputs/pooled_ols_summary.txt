@@ -1,0 +1,30 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      Unemployment_Rate   R-squared:                       0.285
+Model:                            OLS   Adj. R-squared:                  0.263
+Method:                 Least Squares   F-statistic:                     14.79
+Date:                Wed, 22 Apr 2026   Prob (F-statistic):           6.01e-10
+Time:                        00:22:57   Log-Likelihood:                -355.50
+No. Observations:                 132   AIC:                             721.0
+Df Residuals:                     127   BIC:                             735.4
+Df Model:                           4                                         
+Covariance Type:                  HC3                                         
+==================================================================================================
+                                     coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------
+Intercept                          6.9076      6.537      1.057      0.291      -5.906      19.721
+Establishments_per_1000_15plus     0.3789      0.080      4.729      0.000       0.222       0.536
+Population_Density                 0.0033      0.001      2.550      0.011       0.001       0.006
+Students_per_Class                 0.0083      0.206      0.040      0.968      -0.395       0.412
+Schools_per_1000_population        2.3224      0.610      3.807      0.000       1.127       3.518
+==============================================================================
+Omnibus:                        1.544   Durbin-Watson:                   0.875
+Prob(Omnibus):                  0.462   Jarque-Bera (JB):                1.385
+Skew:                           0.112   Prob(JB):                        0.500
+Kurtosis:                       2.551   Cond. No.                     2.40e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The condition number is large, 2.4e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
