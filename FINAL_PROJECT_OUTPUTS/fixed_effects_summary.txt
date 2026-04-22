@@ -1,0 +1,50 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      Unemployment_Rate   R-squared:                       0.847
+Model:                            OLS   Adj. R-squared:                  0.812
+Method:                 Least Squares   F-statistic:                     547.8
+Date:                Wed, 22 Apr 2026   Prob (F-statistic):           2.05e-13
+Time:                        20:47:21   Log-Likelihood:                -253.93
+No. Observations:                 132   AIC:                             557.9
+Df Residuals:                     107   BIC:                             629.9
+Df Model:                          24                                         
+Covariance Type:              cluster                                         
+==================================================================================================
+                                     coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------
+Intercept                         14.2032      4.447      3.194      0.001       5.488      22.919
+C(Governorate)[T.Amman]           -1.6850      2.219     -0.760      0.448      -6.033       2.663
+C(Governorate)[T.Aqaba]           -3.7573      5.113     -0.735      0.462     -13.778       6.263
+C(Governorate)[T.Balqa]            0.6572      0.844      0.779      0.436      -0.997       2.311
+C(Governorate)[T.Irbid]            2.1252      6.240      0.341      0.733     -10.104      14.355
+C(Governorate)[T.Jerash]           0.0342      0.772      0.044      0.965      -1.480       1.548
+C(Governorate)[T.Karak]           -3.2149      3.646     -0.882      0.378     -10.360       3.930
+C(Governorate)[T.Ma'an]            0.6164      4.993      0.123      0.902      -9.169      10.402
+C(Governorate)[T.Madaba]           0.2086      2.826      0.074      0.941      -5.330       5.747
+C(Governorate)[T.Mafraq]          -0.0459      4.453     -0.010      0.992      -8.773       8.681
+C(Governorate)[T.Tafilah]          1.6872      4.184      0.403      0.687      -6.514       9.889
+C(Governorate)[T.Zarqa]           -1.0218      1.990     -0.513      0.608      -4.922       2.879
+C(Year)[T.2015]                    1.2810      0.771      1.662      0.096      -0.230       2.792
+C(Year)[T.2016]                    3.0916      0.864      3.578      0.000       1.398       4.785
+C(Year)[T.2017]                    7.0440      1.798      3.917      0.000       3.519      10.569
+C(Year)[T.2018]                    6.4918      1.643      3.950      0.000       3.271       9.713
+C(Year)[T.2019]                    6.0826      1.611      3.775      0.000       2.924       9.241
+C(Year)[T.2020]                    9.4258      1.593      5.917      0.000       6.303      12.548
+C(Year)[T.2021]                   11.1110      1.441      7.709      0.000       8.286      13.936
+C(Year)[T.2022]                   10.3978      1.167      8.912      0.000       8.111      12.685
+C(Year)[T.2023]                    9.0811      0.981      9.261      0.000       7.159      11.003
+C(Year)[T.2024]                    8.4184      0.953      8.834      0.000       6.551      10.286
+Establishments_per_1000_15plus     0.0500      0.239      0.209      0.834      -0.418       0.518
+Population_Density                -0.0033      0.011     -0.310      0.756      -0.024       0.018
+Schools_per_1000_population       -0.1262      0.516     -0.245      0.807      -1.137       0.885
+==============================================================================
+Omnibus:                        3.064   Durbin-Watson:                   2.236
+Prob(Omnibus):                  0.216   Jarque-Bera (JB):                2.804
+Skew:                           0.179   Prob(JB):                        0.246
+Kurtosis:                       3.618   Cond. No.                     1.62e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 1.62e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
