@@ -1,0 +1,72 @@
+FINAL PROJECT SUMMARY
+============================================================
+
+Selected Regression Features:
+- Establishments_per_1000_15plus
+- Population_Density
+- Schools_per_1000_population
+
+Model Comparison:
+                     Model       R2     RMSE      MAE  Adjusted_R2  F_Statistic     F_pvalue     Overfitting_Check
+                Pooled OLS 0.281439 3.585705 2.954643     0.264598    19.746297 1.390979e-10                   NaN
+         Fixed Effects OLS 0.846621 1.656631 1.305684     0.812218   547.841022 2.049819e-13                   NaN
+Leave-One-Year-Out Overall 0.692416 2.345983 1.831531          NaN          NaN          NaN Potential Overfitting
+
+LOYO by Year:
+        Model        R2     RMSE      MAE  Test_Year  Adjusted_R2_Train
+TestYear_2014 -0.101428 2.474276 2.228570       2014           0.692076
+TestYear_2015  0.039390 1.609613 1.271458       2015           0.718594
+TestYear_2016 -1.327618 2.046700 1.564287       2016           0.757438
+TestYear_2017  0.022640 3.640939 2.639847       2017           0.809934
+TestYear_2018  0.155708 2.077139 1.579362       2018           0.772820
+TestYear_2019 -1.143481 3.290785 2.854674       2019           0.803652
+TestYear_2020  0.404143 1.973640 1.643374       2020           0.757761
+TestYear_2021 -0.378821 2.441246 2.198566       2021           0.751278
+TestYear_2022 -0.119220 1.990913 1.634579       2022           0.752271
+TestYear_2023  0.382288 1.261690 1.047166       2023           0.753195
+TestYear_2024 -0.618295 1.956365 1.484961       2024           0.764612
+
+Overfitting Check: Potential Overfitting
+
+
+Interpretation Notes:
+- Pooled OLS is the baseline model.
+- Fixed Effects OLS is the main explanatory model.
+- LOYO is used to evaluate temporal generalization.
+- VIF checks multicollinearity.
+- Adjusted R2 penalizes unnecessary model complexity.
+- Jarque-Bera tests residual normality.
+- Breusch-Pagan tests heteroskedasticity.
+
+
+Clustering Summary:
+Best number of clusters: 2
+
+Silhouette Scores:
+ k  Silhouette Score
+ 2          0.508511
+ 3          0.241326
+ 4          0.236714
+ 5          0.223064
+ 6          0.211676
+
+Cluster Profiles:
+         Unemployment_Rate  Establishments_per_1000_15plus  Population_Density  Students_per_Class  Schools_per_1000_population  Student_Ratio_5_19
+Cluster                                                                                                                                            
+0                19.695058                        8.347321          301.193903           23.023198                     3.576893           84.257632
+1                17.363663                       14.534136           23.428050           59.114405                     2.496762          209.543786
+
+Governorates by Cluster:
+Governorate  Cluster
+     Ajloun        0
+      Amman        0
+      Balqa        0
+      Irbid        0
+      Karak        0
+     Jerash        0
+      Ma'an        0
+     Madaba        0
+    Tafilah        0
+     Mafraq        0
+      Zarqa        0
+      Aqaba        1
